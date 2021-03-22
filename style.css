@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(250, 194, 229);
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.minInp,
+.maxInp,
+.resultContainer {
+  margin: 20px;
+}
