@@ -32,20 +32,20 @@ function getlenghtOfLimit(a,b){
 let arrUsedRandNum=[]
 let a=0
 
-document.querySelector('.generButton').onclick=(event)=>{
+document.querySelector('.game-display__button').onclick=(event)=>{
     console.log(event)
     a++
 
-    let minInp=validNumber(+document.querySelector('.minInp').value)
-    let maxInp=validNumber(+document.querySelector('.maxInp').value)
+    let minInp=validNumber(+document.querySelector('.limit-min').value)
+    let maxInp=validNumber(+document.querySelector('.limit-max').value)
 
     let lenghtOfLimit=getlenghtOfLimit(minInp,maxInp)
    
-    document.querySelector('.minInp').value=minInp
-    document.querySelector('.maxInp').value=maxInp
+    document.querySelector('.limit-min').value=minInp
+    document.querySelector('.limit-max').value=maxInp
 
-    document.querySelector('.minInp').disabled = true
-    document.querySelector('.maxInp').disabled = true
+    document.querySelector('.limit-min').disabled = true
+    document.querySelector('.limit-max').disabled = true
 
     let k
     minInp>maxInp?k=maxInp:k=minInp
@@ -62,15 +62,16 @@ document.querySelector('.generButton').onclick=(event)=>{
     console.log(arrUsedRandNum[randomNum])
 
     if(arrUsedRandNum.length>0){
-    document.querySelector('.result').innerHTML=arrUsedRandNum[randomNum]}
+        document.querySelector('.text__result').innerHTML=arrUsedRandNum[randomNum]
+    }
     else{
-        document.querySelector('.result').innerHTML="elements are over"
-        document.querySelector('.generButton').disabled = true
+        document.querySelector('.text__result').innerHTML="elements are over"
+        document.querySelector('.game-display__button').disabled = true
     }
 
     arrUsedRandNum.splice(randomNum,1)
 }
 
-document.querySelector('.resetButton').onclick = ()=>{
+document.querySelector('.reset-display__elem').onclick = ()=>{
     location.reload(); 
 }

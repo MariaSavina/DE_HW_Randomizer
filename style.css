@@ -1,13 +1,18 @@
-body {
+.header,
+.content {
   background-color: rgb(250, 194, 229);
   text-align: center;
 }
-main {
+.content {
   display: flex;
   flex-direction: column;
 }
-.minInp,
-.maxInp,
-.resultContainer {
-  margin: 20px;
+.limit-min,
+.limit-max {
+  display: block;
+  margin: 15px auto;
+}
+.game-display__elem,
+.reset-display {
+  margin: 15px;
 }

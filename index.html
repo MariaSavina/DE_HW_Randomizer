@@ -8,21 +8,30 @@
     <title>Randomizer</title>
 </head>
 <body>
-    <header>
-        <h1>RANDOMIZER</h1>
+    <header class="header">
+        <h1 class="header__element">RANDOMIZER</h1>
     </header>
     <main>
-        <span>Min</span>
-        <div><input type="number" class="minInp" value="0"></div>
-        <span>Max</span>
-        <div><input type="number" class="maxInp" value="5"></div>
-        <div><button class="generButton">Generate</button></div>
-        <div class="resultContainer">
-            <span>Generated number: </span>
-            <span class="result"></span>
+        <div class="content">
+            <div class="limit-selection">
+                <span class="limit-selection__elem">Min</span>
+                <input type="number" class="limit-selection__input limit-min" value="0">
+                <span class="limit-selection__elem">Max</span>
+                <input type="number" class="limit-selection__input limit-max" value="5">
+            </div>
+            <div class="game-display">
+                <div class="game-display__elem">
+                    <button class="game-display__button">Generate</button>
+                </div>
+                <div class="game-display__elem text">
+                    <span class="text__content">Generated number: </span>
+                    <span class="text__result"></span>
+                </div>
+            </div>
+            <div class='reset-display'>
+                <button class='reset-display__elem'>Reset</button>
+            </div>
         </div>
-        <div><button class="resetButton">Reset</button></div>
-        
     </main>
     <footer></footer>
 </body>
