@@ -16,3 +16,15 @@
 .reset-display {
   margin: 15px;
 }
+.limit-selection__input:nth-child(4) {
+  border: 1px solid brown;
+}
+.game-display__button:disabled {
+  background: gray;
+}
+.reset-display__elem:hover {
+  box-shadow: 0 3px 3px #6b6d6e;
+}
+.limit-selection__input:focus {
+  outline: 1px solid blue;
+}
